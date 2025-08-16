@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>タイマー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>タイマー</h1>
+    <div class="timer-container">
+        <div class="time-buttons">
+            <button class="set-time" data-minutes="1">1分</button>
+            <button class="set-time" data-minutes="3">3分</button>
+            <button class="set-time" data-minutes="5">5分</button>
+            <button class="set-time" data-minutes="10">10分</button>
+            <button class="set-time" data-minutes="30">30分</button>
+            <button class="set-time" data-minutes="60">60分</button>
+        </div>
+        <div id="display" class="timer-display">00:00</div>
+        <div class="control-buttons">
+            <button id="start-btn">スタート</button>
+            <button id="stop-btn">ストップ</button>
+        </div>
+    </div>
+    <audio id="timer-sound" src="timer-end.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
